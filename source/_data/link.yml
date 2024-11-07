@@ -33,7 +33,7 @@
       link: https://lxqxm.top # 友链地址
       avatar: https://bu.dusays.com/2024/08/28/66ceb35deb5b1.webp # 显示头像
       descr: 一个对你有帮助的圈子 # 友链简介
-      recommend: true
+      # recommend: true
 
     - name: Spark の Blog # 友链名称
       link: https://www.aspark.cc # 友链地址
