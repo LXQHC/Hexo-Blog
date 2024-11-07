@@ -22,6 +22,7 @@ jobs:
         find source -name '*.md' | while read file; do
           touch -d "$(git log -1 --format="@%ct" "$file")" "$file"
         done
+
     - name: 安装 Node.js
       uses: actions/setup-node@v3
       with:
@@ -30,6 +31,7 @@ jobs:
     - name: 安装 Hexo
       run: |
         npm install -g hexo-cli
+
     - name: 缓存 node 模块
       id: cache-node-modules
       uses: actions/cache@v3
@@ -38,26 +40,17 @@ jobs:
         key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-modules-
+
     - name: 安装依赖
       if: steps.cache-node-modules.outputs.cache-hit != 'true'
       run: |
         npm install --save
-    - name: 生成静态文件
+
+    - name: 生成静态
       run: |
-        npm run build
+        hexo generate
 
-    - name: 部署到服务器
-      uses: easingthemes/ssh-deploy@main
-      with:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        ARGS: "-rlgoDzvc -i --delete"
-        SOURCE: "public/"
-        REMOTE_HOST: "47.84.38.180"           # 指定远程主机
-        REMOTE_USER: "root"                   # 指定远程用户名
-        TARGET: "/www/wwwroot/lxqxm.top"  # 指定远程目录
-        REMOTE_PORT: "22"                     # 指定 SSH 端口
-
-    - name: 部署到 GitHub Pages
+    - name: 部署推送到目标仓库
       uses: peaceiris/actions-gh-pages@v3
       with:
         personal_token: ${{ secrets.PAT }}
