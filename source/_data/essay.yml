@@ -1,0 +1,87 @@
+- title: 即刻短文
+  subTitle: 咸鱼的日常生活。
+  tips: 随时随地，分享生活
+  buttonText: 关于我
+  buttonLink: /about/
+  limit: 30
+  home_essay: true
+  top_background: https://s1.xiaomiev.com/activity-outer-assets/0328/images/Ultra_U/pc/ultra_17.jpg
+  essay_list:
+    # - content: 安知鱼主题指南
+    #   date: 2023/09/09
+    #   video:
+    #     - https://player.bilibili.com/player.html?aid=226886152&bvid=BV1Ch41137tR&cid=1081639816&p=1&autoplay=0
+    # - content: 支持了Accesskey快捷键，可以直接按下shift + ?组合键以查看快捷键选项。
+    #   date: 2023/07/01
+    #   video:
+    #     - https://cdn.jsdelivr.net/npm/anzhiyu-blog-static@1.0.0/video/%E9%A3%8E%E8%BD%A6%E6%A0%B7%E5%BC%8F%E6%95%88%E6%9E%9C%E9%A2%84%E8%A7%88.mp4
+    #   image:
+    #     - https://img02.anheyu.com/adminuploads/1/2023/07/01/64a033cb2c21e.webp!blogimg
+    #   address: 长沙
+    #   from: 安知鱼
+    #   link: /posts/e140.html
+    # - content: 遇见彩虹🌈吃定彩虹
+    #   date: 2022/10/23 10:00:00
+    #   image:
+    #     - https://bu.dusays.com/2023/04/09/64329399e285d.webp
+    #     - https://bu.dusays.com/2023/04/09/64329399aa3bc.webp
+    #     - https://bu.dusays.com/2023/04/09/6432939996dd7.webp
+    # - content: 歌曲推荐
+    #   date: 2022/09/25
+    #   aplayer:
+    #     server: tencent
+    #     id: 001FGQba3i10mw
+    - content: 中秋赏月🥮🌕🥮
+      date: 2024-09-17 22:10
+      image:
+        - https://bu.dusays.com/2024/09/18/66ea6167ae701.jpg
+        - https://bu.dusays.com/2024/09/18/66ea6167b83c0.jpg
+        - https://bu.dusays.com/2024/09/18/66ea6167c1b6a.jpg
+        - https://bu.dusays.com/2024/09/18/66ea6167b4845.jpg
+
+    - content: 当我拿起相机那一刻，你就得听我的📸
+      date: 2024-09-13 21:10
+
+    - content: 生日快乐🍭🎂🎉🍭
+      date: 2024-09-11 22:10
+      image:
+        - https://bu.dusays.com/2024/09/11/66e1acee97cab.webp
+        - https://bu.dusays.com/2024/09/11/66e1acee8d04e.webp
+        - https://bu.dusays.com/2024/09/11/66e1acee8d068.webp
+      address: 哈尔滨
+
+    - content: 跑路了，安全到哈尔滨😭
+      date: 2024-08-10 13:30
+      image:
+        - https://bu.dusays.com/2024/08/10/66b7006de3019.webp
+      address: 哈尔滨
+
+    - content: 真踏马艰苦，瞬间回到上世纪70年代的山区，这活真难坚持😔
+      date: 2024-08-08 19:30
+      image:
+        - https://bu.dusays.com/2024/08/08/66b4af4bcfc3c.webp
+      address: 呼玛县
+      from: 陆小启
+
+    - content: 明天就要去呼玛了，据说跟俄罗斯隔条江，可以游过去了🐸
+      date: 2024-08-07 08:30
+      address: 大兴安岭地区
+      from: 陆小启
+
+    - content: 比赛终于打完了🐷，打得异常憋屈，不过悬着的心终于放下来了😥。简陋的环境，行李箱当支架。感觉应该可以拿个国二🐉
+      date: 2024-08-04 11:30
+      image:
+        - https://bu.dusays.com/2024/08/04/66aef7daabb51.jpg
+      address: 大兴安岭地区
+      from: 陆小启
+
+    - content: 运气不错🐳
+      date: 2024-08-02 18:30
+      image:
+        - https://bu.dusays.com/2024/08/02/66acb9c5210e1.webp
+      address: 大兴安岭地区
+      from: 陆小启
+
+    - content: 文章集合
+      date: 2024/07/24
+      link: https://www.lxqxm.top/archives/
