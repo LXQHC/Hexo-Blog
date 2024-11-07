@@ -1,0 +1,69 @@
+name: 自动构建
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Shanghai
+    steps:
+    - name: 检查源仓库分支
+      uses: actions/checkout@v3
+      with:
+        ref: main
+        fetch-depth: 0
+
+    - name: 恢复文件修改时间
+      run: |
+        find source -name '*.md' | while read file; do
+          touch -d "$(git log -1 --format="@%ct" "$file")" "$file"
+        done
+    - name: 安装 Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: "20.x"
+
+    - name: 安装 Hexo
+      run: |
+        npm install -g hexo-cli
+    - name: 缓存 node 模块
+      id: cache-node-modules
+      uses: actions/cache@v3
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-modules-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-modules-
+    - name: 安装依赖
+      if: steps.cache-node-modules.outputs.cache-hit != 'true'
+      run: |
+        npm install --save
+    - name: 生成静态文件
+      run: |
+        npm run build
+
+    - name: 部署到服务器
+      uses: easingthemes/ssh-deploy@main
+      with:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        ARGS: "-rlgoDzvc -i --delete"
+        SOURCE: "public/"
+        REMOTE_HOST: "47.84.38.180"           # 指定远程主机
+        REMOTE_USER: "root"                   # 指定远程用户名
+        TARGET: "/www/wwwroot/lxqxm.top"  # 指定远程目录
+        REMOTE_PORT: "22"                     # 指定 SSH 端口
+
+    - name: 部署到 GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        personal_token: ${{ secrets.PAT }}
+        publish_dir: ./public
+        external_repository: JLinMr/JLinmr.github.io
+        user_name: "github-actions[bot]"
+        user_email: "github-actions[bot]@users.noreply.github.com"
+        full_commit_message: "通过 Github Actions 部署 Hexo 构建"
+        publish_branch: main
