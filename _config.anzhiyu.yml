@@ -1252,10 +1252,8 @@ inject:
     # - <script src="/js/xxx"></script>
     - <script defer="true" src="/js/card-welcome.js"></script> # 个性定位欢迎信息
     - <script defer="true" src="/js/footer-animal.js"></script> # 页脚动物
-    - <script defer="true" src="/js/lunar.js"></script> # 侧边栏日历倒计时
-    - <script defer="true" src="/js/calendar.js"></script> # 侧边栏日历倒计时
-
-    - <script src="/js/redirect.js"></script> # 跳转到原网址
+    - <script defer="true" src="/js/lunar.js"></script>
+    - <script defer="true" src="/js/calendar.js"></script>
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要请不要修改
