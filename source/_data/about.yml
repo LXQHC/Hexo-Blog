@@ -73,21 +73,18 @@
     comic_tips: 爱好番剧
     comic_title: 追番
     comic_list:
-      - name: 约定的梦幻岛
-        href: https://www.bilibili.com/bangumi/media/md23154901/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/27/647166c44b414.webp
-      - name: 咒术回战
-        href: https://www.bilibili.com/bangumi/media/md28229899/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/24/646db4398832e.webp
-      - name: 紫罗兰永恒花园
-        href: https://www.bilibili.com/bangumi/media/md8892/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/24/646db43983d99.webp
-      - name: 鬼灭之刃
-        href: https://www.bilibili.com/bangumi/media/md22718131/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/24/646db439856a0.webp
-      - name: JOJO的奇妙冒险 黄金之风
-        href: https://www.bilibili.com/bangumi/media/md135652/?spm_id_from=666.25.b_6d656469615f6d6f64756c65.1
-        cover: https://bu.dusays.com/2023/05/30/64760e38d651a.webp
+      - name: 关于我转生变成史莱姆这档事
+        href: https://www.bilibili.com/bangumi/media/md139252/?spm_id_from=333.1387.0.0
+        cover: https://i0.hdslb.com/bfs/bangumi/a4c0e0ccc44fe3949a734f546cf5bb07da925bad.png@310w_413h.webp
+      - name: 关于我转生变成史莱姆这档事 第二季
+        href: https://www.bilibili.com/bangumi/media/md28231812/?spm_id_from=333.1387.0.0
+        cover: https://i0.hdslb.com/bfs/bangumi/image/fd492888df64bbc3b821dac5d516dbc1c2fe5f08.png@310w_413h.webp
+      - name: 关于我转生变成史莱姆这档事 第三季
+        href: https://www.bilibili.com/bangumi/media/md23154901/?spm_id_from=333.1387.0.0
+        cover: https://bu.dusays.com/2024/09/19/66ec10443f820.ico
+      - name: 关于我转生变成史莱姆这档事 转生史莱姆日记
+        href: https://www.bilibili.com/bangumi/media/md28233903/?spm_id_from=333.1387.0.0
+        cover: https://bu.dusays.com/2024/09/19/66ec10443f820.ico
   like:
     like_tips: 关注偏好
     like_title: 科技、数码
