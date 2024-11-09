@@ -74,13 +74,11 @@
     comic_title: 追番
     comic_list:
       - name: 关于我转生变成史莱姆这档事
-        href: https://www.bilibili.com/bangumi/media/md23154901
+        href: https://www.bilibili.com/bangumi/play/ss36170?spm_id_from=333.1387.0.0
         cover: https://bkimg.cdn.bcebos.com/pic/34fae6cd7b899e510fb33c7fdbefce33c895d143a70a?x-bce-process=image/format,f_auto/watermark,image_d2F0ZXIvYmFpa2UyNzI,g_7,xp_5,yp_5,P_20/resize,m_lfit,limit_1,h_1080
-        - name: 关于我转生变成史莱姆这档事 第三季
-        href: https://www.bilibili.com/bangumi/media/md23154901
+      - name: 关于我转生变成史莱姆这档事 第三季
+        href: https://www.bilibili.com/bangumi/play/ss48852?spm_id_from=333.1387.0.0
         cover: https://i0.hdslb.com/bfs/bangumi/image/039aabad5b34a513ca2495ce9a4bf69157d06c8a.png@310w_413h.webp
-  
- 
   like:
     like_tips: 关注偏好
     like_title: 科技、数码
