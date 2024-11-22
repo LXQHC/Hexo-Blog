@@ -490,8 +490,8 @@ footer:
     project:
       - title: 项目
         links:
-          - title: 小启云
-            link: https://pan.lxqxm.top/
+          # - title: 小启云
+          #   link: https://pan.lxqxm.top/
           - title: 拉新赚钱
             link: https://dt.bd.cn/#/pages/login/register?invite_code=363394
           - title: 学习园地   
