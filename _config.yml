@@ -13,7 +13,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog.lxqxm.top/
+url: https://lxqxm.top/
 ## permalink: :year/:month/:day/:title/
 permalink: posts/:abbrlink.html  ## 或 :/abbrlink/ （此处可自定义'posts'处，如：posts:year/:abbrlink.html 或 :abbrlink.html）
 permalink_defaults:
